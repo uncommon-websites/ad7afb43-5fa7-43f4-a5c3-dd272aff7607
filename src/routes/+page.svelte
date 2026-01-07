@@ -8,21 +8,17 @@
 		
 		<!-- Headline -->
 		<h1 class="text-2xl sm:text-3xl md:text-[2rem] leading-[1.3] font-bold tracking-tight mb-10 text-black">
-			Thilo is <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">Uncommon</span> Founder, Partner and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">Sequoia</span> Arc Advisor.
+			Ron Zori accelerates <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">pre-seed</span> startup success through strategic capital and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">founder-focused</span> mentorship.
 		</h1>
 
 		<!-- Body Text -->
 		<div class="text-lg sm:text-xl md:text-[1.35rem] leading-[1.6] text-[#888888] font-normal tracking-tight">
-			He invested, advised or designed 
-			{#each ["Mercor", "Delphi", "Squint", "Dash0", "CrewAI", "GradientLabs", "Build", "Fleet", "Medra", "nsave", "Ironbridge", "DiligenceSquared", "Lemni", "Morphic", "Compile", "Lapel", "Orbit", "Sensmore", "Nolla", "Luo", "Hero", "Popcorn", "Partykit", "Guided Energy", "Commerce Systems", "Claim", "Structify", "Snaptrude", "Superlinked", "Tilebox", "Amperecloud", "Equipme", "Documenso"] as company, i}
-				<span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">{company}</span>{#if i < 32}<span>, </span>{/if}
-			{/each}
-			and <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">Era</span>, founded <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">Home</span>, worked at <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">Airbnb</span> in 2011 and studied architecture – DM anytime on <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">X</span> or <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">LinkedIn</span>.
+			We back early-stage founders who need strategic guidance and investor connections but lack experienced mentorship networks. Through our <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">operator playbook</span> and <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">network effects</span>, we're targeting the <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">$3T startup economy</span>. We reach founders through <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">accelerator demo days</span>, overcoming fundraising anxiety with <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">immediate term sheets</span> and operational expertise that turns vision into traction.
 		</div>
 
 		<!-- CTA -->
 		<p class="mt-10 text-lg sm:text-xl md:text-[1.35rem] text-[#888888] font-normal tracking-tight">
-			How can we work together?
+			Ready to accelerate your startup?
 		</p>
 	</div>
 
