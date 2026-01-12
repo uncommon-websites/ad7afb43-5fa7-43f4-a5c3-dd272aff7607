@@ -13,19 +13,12 @@
 
 		<!-- Body Text -->
 		<div class="text-lg sm:text-xl md:text-[1.35rem] leading-[1.6] text-[#888888] font-normal tracking-tight">
-			We back early-stage founders who need strategic guidance and investor connections but lack experienced mentorship networks. Through our <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">operator playbook</span> and <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">network effects</span>, we're targeting the <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">$3T startup economy</span>. We reach founders through <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">accelerator demo days</span>, overcoming fundraising anxiety with <span class="inline-block bg-[#f4f4f5] text-black px-1.5 py-0.5 rounded-[4px] align-baseline">immediate term sheets</span> and operational expertise that turns vision into traction.
-		</div>
-
-		<!-- Background Section -->
-		<div class="mt-12 pt-12 border-t border-gray-200">
-			<div class="text-base sm:text-lg md:text-[1.15rem] leading-[1.7] text-[#888888] font-normal tracking-tight">
-				<p class="mb-4">
-					He invested, advised or led growth for Erebor, Public.com, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, MangoMicro, Elvy, Flagship, Aer, Mine, WeMoney, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.
-				</p>
-				<p class="text-black">
-					DM anytime on <a href="https://www.linkedin.com/in/ronzori" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">LinkedIn</a> or at <a href="mailto:ron@zori.me" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">ron@zori.me</a>
-				</p>
-			</div>
+			<p class="mb-4">
+				He invested, advised or led growth for Erebor, Public.com, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, MangoMicro, Elvy, Flagship, Aer, Mine, WeMoney, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.
+			</p>
+			<p class="text-black">
+				DM anytime on <a href="https://www.linkedin.com/in/ronzori" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">LinkedIn</a> or at <a href="mailto:ron@zori.me" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">ron@zori.me</a>
+			</p>
 		</div>
 
 		<!-- CTA -->
