@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-lg sm:text-xl md:text-[1.35rem] text-[#888888] font-normal tracking-tight">
+		<p class="text-lg sm:text-xl md:text-[1.35rem] text-[#444444] font-normal tracking-tight">
 			Ready to accelerate your startup?
 		</p>
 	</div>
