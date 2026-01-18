@@ -7,7 +7,7 @@
 	<div class="flex-1 flex flex-col justify-center max-w-[900px]">
 		
 		<!-- Headline -->
-		<h1 class="text-lg sm:text-xl md:text-2xl leading-[1.3] font-bold tracking-tight text-black">
+		<h1 class="text-lg sm:text-xl md:text-2xl leading-[1.3] font-bold tracking-tight text-black" style="font-family: 'Inter', sans-serif;">
 			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">2x zero to unicorn</span> growth leader.
 		</h1>
 
