@@ -8,7 +8,7 @@
 		
 		<!-- Headline -->
 		<h1 class="text-2xl sm:text-3xl md:text-[2rem] leading-[1.3] font-bold tracking-tight mb-10 text-white">
-			Ron is a venture investor and <span class="inline-block bg-[#1a1a1a] px-2 py-0.5 rounded-[5px] font-bold align-baseline">2x zero to unicorn</span> growth leader.
+			Ron is a venture investor and <span class="inline-block bg-[#3d3520] px-2 py-0.5 rounded-[5px] font-bold align-baseline">2x zero to unicorn</span> growth leader.
 		</h1>
 
 		<!-- Body Text -->
