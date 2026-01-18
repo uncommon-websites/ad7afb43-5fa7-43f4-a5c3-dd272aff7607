@@ -7,8 +7,8 @@
 	<div class="flex-1 flex flex-col justify-center max-w-[900px]">
 		
 		<!-- Headline -->
-		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#707070]" style="font-family: 'Inter', sans-serif; font-weight: 900;">
-			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] align-baseline" style="font-weight: 900;">2x zero to unicorn</span> growth leader.
+		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700;">
+			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] align-baseline" style="font-weight: 700;">2x zero to unicorn</span> growth leader.
 		</h1>
 
 		<!-- Body Text -->
