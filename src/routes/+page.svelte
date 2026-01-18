@@ -2,7 +2,7 @@
 	import "../app.css";
 </script>
 
-<div class="min-h-screen flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#111] bg-white selection:bg-gray-200">
+<div class="min-h-screen flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-black bg-white selection:bg-gray-200">
 	<!-- Spacer for vertical centering alignment, but biased towards top/center -->
 	<div class="flex-1 flex flex-col justify-center max-w-[900px]">
 		
@@ -12,14 +12,14 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="text-base sm:text-lg md:text-[1.1rem] leading-[1.6] text-[#888888] font-normal tracking-tight">
+		<div class="text-base sm:text-lg md:text-[1.1rem] leading-[1.6] text-black font-normal tracking-tight">
 			<p>
 				He invested, advised or led growth for <a href="https://public.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Public.com</a>, <span class="bg-[#fdf6e3] px-1">Erebor</span>, <a href="https://knotel.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Knotel</a>, <a href="https://openweb.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">OpenWeb</a>, <a href="https://blankstreet.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">BlankStreet</a>, <a href="https://govdash.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">GovDash</a>, <a href="https://voyantis.ai" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Voyantis</a>, <a href="https://syrup.tech" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Syrup.Tech</a>, <a href="https://synonym.bio" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Synonym</a>, <a href="https://terraone.io" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">TerraOne</a>, <a href="https://www.joinduet.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Duet</a>, <a href="https://cambrium.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Cambrium</a>, <a href="https://mangomicro.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Mango</a>, <a href="https://www.elvyenergy.com/en" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Elvy</a>, <a href="https://flagship.io" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Flagship</a>, <a href="https://www.aercompliance.com/" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Aer</a>, <a href="https://usemine.com/" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Mine</a>, <a href="https://wemoney.com.au" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">WeMoney</a>, <a href="https://cased.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Cased</a>, <a href="https://www.ledge.co/" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Ledge</a>, <a href="https://www.rex.app/en" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Rex</a>, <a href="https://classet.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Classet</a>, <a href="https://www.colbr.co/" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Colbr</a>, <a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="bg-[#fdf6e3] px-1">Pazago</a>, played pro soccer in Israel and studied philosophy and economics at Columbia. DM anytime on <a href="https://www.linkedin.com/in/ronzori" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">LinkedIn</a> or at <a href="mailto:ron@zori.me" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">ron@zori.me</a>
 			</p>
 		</div>
 
 		<!-- CTA -->
-		<p class="mt-10 text-lg sm:text-xl md:text-[1.35rem] text-[#888888] font-normal tracking-tight">
+		<p class="mt-10 text-lg sm:text-xl md:text-[1.35rem] text-black font-normal tracking-tight">
 			Ready to accelerate your startup?
 		</p>
 	</div>
