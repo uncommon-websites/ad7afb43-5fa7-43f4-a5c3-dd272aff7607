@@ -2,13 +2,13 @@
 	import "../app.css";
 </script>
 
-<div class="min-h-screen flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#111] bg-white selection:bg-gray-200">
+<div class="min-h-screen flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16 text-[#111] bg-white selection:bg-gray-200" style="font-family: 'Inter', sans-serif;">
 	<!-- Spacer for vertical centering alignment, but biased towards top/center -->
 	<div class="flex-1 flex flex-col justify-center max-w-[900px]">
 		
 		<!-- Headline -->
-		<h1 class="text-lg sm:text-xl md:text-2xl leading-[1.3] font-bold tracking-tight text-black" style="font-family: 'Inter', sans-serif;">
-			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-bold align-baseline">2x zero to unicorn</span> growth leader.
+		<h1 class="text-lg sm:text-xl md:text-2xl leading-[1.3] font-medium tracking-tight text-black">
+			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] font-medium align-baseline">2x zero to unicorn</span> growth leader.
 		</h1>
 
 		<!-- Body Text -->
@@ -26,7 +26,7 @@
 
 	<!-- Footer -->
 	<div class="flex justify-between items-end mt-12 w-full">
-		<div class="text-xl text-black font-light select-none">|</div>
+		<div class="text-xl text-black font-normal select-none">|</div>
 		<button class="w-12 h-12 bg-[#f4f4f5] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer" aria-label="Next">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#9ca3af]">
 				<line x1="5" y1="12" x2="19" y2="12"></line>
