@@ -247,20 +247,15 @@
 
 ──────────────────────────────────────────────────
 
-## Session: 2026-01-18T23:31:37.444Z
+## Session: 2026-01-18T23:36:45.008Z
 
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-01-18T23:31:03.762Z -->
+<!-- Updated: 2026-01-18T23:36:38.054Z -->
 
 # Current Todo List State
 
-- [ ] Update body font to Inter
-- [ ] Style plain text to 500 weight
-- [ ] Style tags to 700 weight
-- [ ] Set font size to 15px
-- [ ] Set letter spacing -0.02em
-- [ ] Set line height to 1.8
-- [ ] Set plain text color #707070
-- [ ] Style tags background/border
+- [ ] Find all section elements
+- [ ] Get headline font size
+- [ ] Apply font size to sections
 
 ──────────────────────────────────────────────────
