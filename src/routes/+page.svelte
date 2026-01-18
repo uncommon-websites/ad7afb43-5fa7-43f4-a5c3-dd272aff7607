@@ -2,9 +2,9 @@
 	import "../app.css";
 </script>
 
-<div class="min-h-screen flex flex-col justify-between p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#111] bg-white selection:bg-gray-200">
-	<!-- Spacer for vertical centering alignment, but biased towards top/center -->
-	<div class="flex-1 flex flex-col justify-center max-w-[900px] mx-auto text-center">
+<div class="min-h-screen flex flex-col justify-center items-center p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#111] bg-white selection:bg-gray-200">
+	<!-- Centered content -->
+	<div class="flex flex-col justify-center max-w-[900px] mx-auto text-center">
 		
 		<!-- Headline -->
 		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700;">
@@ -22,17 +22,6 @@
 		<p class="text-lg sm:text-xl md:text-[1.35rem] text-[#888888] font-normal tracking-tight">
 			Ready to accelerate your startup?
 		</p>
-	</div>
-
-	<!-- Footer -->
-	<div class="flex justify-between items-end mt-12 w-full">
-		<div class="text-xl text-black font-light select-none">|</div>
-		<button class="w-12 h-12 bg-[#f4f4f5] rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors cursor-pointer" aria-label="Next">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-[#9ca3af]">
-				<line x1="5" y1="12" x2="19" y2="12"></line>
-				<polyline points="12 5 19 12 12 19"></polyline>
-			</svg>
-		</button>
 	</div>
 </div>
 
