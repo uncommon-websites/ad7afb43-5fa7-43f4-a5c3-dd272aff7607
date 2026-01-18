@@ -167,3 +167,16 @@
 - [ ] Adjust paragraph top margin
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-01-18T23:11:55.941Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-01-18T23:11:21.455Z -->
+
+# Current Todo List State
+
+- [ ] Measure headline-paragraph spacing
+- [ ] Measure paragraph-question spacing
+- [ ] Adjust spacing to match
+
+──────────────────────────────────────────────────
