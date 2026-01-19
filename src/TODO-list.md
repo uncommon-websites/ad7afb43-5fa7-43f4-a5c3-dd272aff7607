@@ -1,6 +1,7 @@
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-01-19T00:03:29.734Z -->
+<!-- Updated: 2026-01-19T00:04:47.576Z -->
 
 # Current Todo List State
 
-- [x] Update LinkedIn link URL
+- [x] Add getquin to company list
+- [x] Add getquin link to company
