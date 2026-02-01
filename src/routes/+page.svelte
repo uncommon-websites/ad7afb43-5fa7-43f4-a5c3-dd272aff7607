@@ -2,9 +2,9 @@
 	import "../app.css";
 </script>
 
-<div class="min-h-screen flex flex-col justify-center items-center p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#000000] selection:bg-gray-200" style="background-color: #FFFFFF;">
+<div class="min-h-screen flex flex-col justify-center items-center font-sans text-[#000000] selection:bg-gray-200" style="background-color: #FFFFFF;">
 	<!-- Centered content -->
-	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
+	<div class="flex flex-col w-full px-[20%] text-left">
 		
 		<!-- Headline -->
 		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700;">
