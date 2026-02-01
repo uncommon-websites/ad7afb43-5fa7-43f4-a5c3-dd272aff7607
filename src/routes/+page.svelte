@@ -77,7 +77,7 @@
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 class="text-[32px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 600;">
+		<h1 class="text-[32px] leading-[1.25] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 600;">
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
 					<span class="word" style="animation-delay: {i * 0.04}s;">
@@ -92,7 +92,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[18px] leading-[1.6] text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400;">
+		<div class="my-6 text-[18px] leading-[1.65] text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400;">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
@@ -203,7 +203,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-[18px] leading-[1.6] text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400;">
+		<p class="text-[18px] leading-[1.65] text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400;">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
 					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
