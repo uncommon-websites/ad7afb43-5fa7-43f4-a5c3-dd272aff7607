@@ -15,7 +15,7 @@
 	}
 
 	.animate-fade-in-slide-up {
-		animation: fadeInSlideUp 0.8s ease-out forwards;
+		animation: fadeInSlideUp 1.5s ease-out forwards;
 		opacity: 0;
 	}
 
