@@ -1,9 +1,8 @@
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-02-01T19:33:29.670Z -->
+<!-- Updated: 2026-02-01T19:34:10.502Z -->
 
 # Current Todo List State
 
-- [x] Stagger element animations
-- [x] Animate H1 (Name) first
-- [x] Animate bio 200ms later
-- [x] Animate contact footer last
+- [x] Set animation easing to Ease-Out
+- [x] Make animation start quickly
+- [x] Slow down animation end
