@@ -1,7 +1,9 @@
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-02-01T19:32:40.757Z -->
+<!-- Updated: 2026-02-01T19:33:29.670Z -->
 
 # Current Todo List State
 
-- [x] Set slide distance to 20px
-- [x] Set slide duration to 0.8s
+- [x] Stagger element animations
+- [x] Animate H1 (Name) first
+- [x] Animate bio 200ms later
+- [x] Animate contact footer last

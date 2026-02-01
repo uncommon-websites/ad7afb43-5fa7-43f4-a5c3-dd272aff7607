@@ -433,3 +433,17 @@
 - [ ] Set slide duration to 0.8s
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-01T19:33:19.793Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-01T19:33:01.829Z -->
+
+# Current Todo List State
+
+- [ ] Stagger element animations
+- [ ] Animate H1 (Name) first
+- [ ] Animate bio 200ms later
+- [ ] Animate contact footer last
+
+──────────────────────────────────────────────────
