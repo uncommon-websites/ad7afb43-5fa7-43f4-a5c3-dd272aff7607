@@ -6,7 +6,7 @@
 	@keyframes fadeInSlideUp {
 		from {
 			opacity: 0;
-			transform: translateY(20px);
+			transform: translateY(50px);
 		}
 		to {
 			opacity: 1;
