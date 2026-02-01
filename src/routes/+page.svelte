@@ -172,6 +172,15 @@
 	<!-- Centered content -->
 	<div class="flex flex-col justify-center max-w-[920px] w-full mx-auto text-left relative z-10">
 		
+		<!-- Logo -->
+		<div class="mb-12 sm:mb-16 opacity-0" style="animation: wordFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;">
+			<svg width="52" height="64" viewBox="0 0 78 96" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-300 hover:scale-105">
+				<path d="M45.5105 63.889C63.2296 63.889 77.5938 49.5868 77.5938 31.9444C77.5938 14.302 63.2296 0 45.5105 0H0.59375V63.889H45.5105Z" fill="black"/>
+				<path d="M0.59375 0L77.5938 95.8333H26.2605L0.59375 63.889L0.59375 0Z" fill="black"/>
+				<path d="M51.4831 63.3363C49.5479 63.6992 47.5515 63.889 45.5105 63.889H0.59375V0L51.4831 63.3363Z" fill="black"/>
+			</svg>
+		</div>
+		
 		<!-- Headline -->
 		<h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.15] tracking-[-0.03em] text-[#000000] mb-8 sm:mb-10 md:mb-12" style="font-family: 'Inter', sans-serif; font-weight: 700;">
 			{#each headlineWords as word, i}
