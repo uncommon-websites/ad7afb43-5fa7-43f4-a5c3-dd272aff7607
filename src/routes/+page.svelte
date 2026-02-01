@@ -36,7 +36,7 @@
 	.word {
 		display: inline-block;
 		opacity: 0;
-		animation: wordFadeIn 0.8s ease-out forwards;
+		animation: wordFadeIn 0.4s ease-out forwards;
 		margin-right: 0.25em;
 	}
 
@@ -79,13 +79,13 @@
 		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700;">
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
-					<span class="word" style="animation-delay: {i * 0.25}s;">
+					<span class="word" style="animation-delay: {i * 0.08}s;">
 						<span class="highlight-badge">2x zero to unicorn</span>
 					</span>
 				{:else if word === 'zero' || word === 'to' || word === 'unicorn'}
 					<!-- Skip these as they're part of the badge -->
 				{:else}
-					<span class="word" style="animation-delay: {i * 0.25}s;">{word}</span>
+					<span class="word" style="animation-delay: {i * 0.08}s;">{word}</span>
 				{/if}
 			{/each}
 		</h1>
@@ -95,107 +95,107 @@
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://public.com" target="_blank" rel="noopener noreferrer" class="link-badge">Public.com</a>,
 						</span>
 					{:else if word === 'Erebor,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://erebor.so/" target="_blank" rel="noopener noreferrer" class="link-badge">Erebor</a>,
 						</span>
 					{:else if word === 'Knotel,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://knotel.com" target="_blank" rel="noopener noreferrer" class="link-badge">Knotel</a>,
 						</span>
 					{:else if word === 'OpenWeb,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://openweb.com" target="_blank" rel="noopener noreferrer" class="link-badge">OpenWeb</a>,
 						</span>
 					{:else if word === 'BlankStreet,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://blankstreet.com" target="_blank" rel="noopener noreferrer" class="link-badge">BlankStreet</a>,
 						</span>
 					{:else if word === 'GovDash,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://govdash.com" target="_blank" rel="noopener noreferrer" class="link-badge">GovDash</a>,
 						</span>
 					{:else if word === 'Voyantis,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://voyantis.ai" target="_blank" rel="noopener noreferrer" class="link-badge">Voyantis</a>,
 						</span>
 					{:else if word === 'Syrup.Tech,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://syrup.tech" target="_blank" rel="noopener noreferrer" class="link-badge">Syrup.Tech</a>,
 						</span>
 					{:else if word === 'Synonym,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://synonym.bio" target="_blank" rel="noopener noreferrer" class="link-badge">Synonym</a>,
 						</span>
 					{:else if word === 'TerraOne,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://terraone.io" target="_blank" rel="noopener noreferrer" class="link-badge">TerraOne</a>,
 						</span>
 					{:else if word === 'Duet,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.joinduet.com" target="_blank" rel="noopener noreferrer" class="link-badge">Duet</a>,
 						</span>
 					{:else if word === 'Cambrium,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://cambrium.com" target="_blank" rel="noopener noreferrer" class="link-badge">Cambrium</a>,
 						</span>
 					{:else if word === 'Mango,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://mangomicro.com" target="_blank" rel="noopener noreferrer" class="link-badge">Mango</a>,
 						</span>
 					{:else if word === 'Elvy,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.elvyenergy.com/en" target="_blank" rel="noopener noreferrer" class="link-badge">Elvy</a>,
 						</span>
 					{:else if word === 'Flagship,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://flagship.io" target="_blank" rel="noopener noreferrer" class="link-badge">Flagship</a>,
 						</span>
 					{:else if word === 'Aer,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.aercompliance.com/" target="_blank" rel="noopener noreferrer" class="link-badge">Aer</a>,
 						</span>
 					{:else if word === 'Mine,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://usemine.com/" target="_blank" rel="noopener noreferrer" class="link-badge">Mine</a>,
 						</span>
 					{:else if word === 'WeMoney,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://wemoney.com.au" target="_blank" rel="noopener noreferrer" class="link-badge">WeMoney</a>,
 						</span>
 					{:else if word === 'getquin,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.getquin.com/portfolio-tracker/" target="_blank" rel="noopener noreferrer" class="link-badge">getquin</a>,
 						</span>
 					{:else if word === 'Cased,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://cased.com" target="_blank" rel="noopener noreferrer" class="link-badge">Cased</a>,
 						</span>
 					{:else if word === 'Ledge,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.ledge.co/" target="_blank" rel="noopener noreferrer" class="link-badge">Ledge</a>,
 						</span>
 					{:else if word === 'Rex,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.rex.app/en" target="_blank" rel="noopener noreferrer" class="link-badge">Rex</a>,
 						</span>
 					{:else if word === 'Classet,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://classet.com" target="_blank" rel="noopener noreferrer" class="link-badge">Classet</a>,
 						</span>
 					{:else if word === 'Colbr,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://www.colbr.co/" target="_blank" rel="noopener noreferrer" class="link-badge">Colbr</a>,
 						</span>
 					{:else if word === 'Pazago,'}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">
 							<a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="link-badge">Pazago</a>,
 						</span>
 					{:else}
-						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">{word}</span>
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.08}s;">{word}</span>
 					{/if}
 				{/each}
 			</p>
@@ -205,15 +205,15 @@
 		<p class="text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.08}s;">
 						<a href="https://www.linkedin.com/in/ron-zori-9b718681/" target="_blank" rel="noopener noreferrer" class="cta-link">LinkedIn</a>
 					</span>
 				{:else if word === 'ron@zori.me.'}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.08}s;">
 						<a href="mailto:ron@zori.me" class="cta-link">ron@zori.me</a>.
 					</span>
 				{:else}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">{word}</span>
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.08}s;">{word}</span>
 				{/if}
 			{/each}
 		</p>
