@@ -47,22 +47,23 @@
 	.highlight-badge {
 		display: inline-block;
 		background: #f5f5f5;
-		padding: 0.125rem 0.5rem;
-		border-radius: 5px;
+		padding: 0.25rem 0.75rem;
+		border-radius: 999px;
 		font-weight: 700;
 	}
 
 	.link-badge {
 		display: inline-block;
 		background: #f5f5f5;
-		padding: 0 0.25rem;
+		padding: 0.125rem 0.5rem;
+		border-radius: 999px;
 	}
 
 	.cta-link {
 		display: inline-block;
 		background: #f5f5f5;
-		padding: 0.125rem 0.375rem;
-		border-radius: 4px;
+		padding: 0.25rem 0.625rem;
+		border-radius: 999px;
 		transition: background-color 0.2s;
 	}
 
