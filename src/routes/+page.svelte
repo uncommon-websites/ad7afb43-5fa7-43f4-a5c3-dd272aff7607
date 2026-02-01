@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-lg sm:text-xl md:text-[1.35rem] text-[#000000] font-normal tracking-tight">
+		<p class="text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight">
 			DM anytime on <a href="https://www.linkedin.com/in/ron-zori-9b718681/" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">LinkedIn</a> or at <a href="mailto:ron@zori.me" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">ron@zori.me</a>.
 		</p>
 	</div>
