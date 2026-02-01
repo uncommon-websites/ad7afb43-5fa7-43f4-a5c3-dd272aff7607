@@ -46,7 +46,7 @@
 
 	.highlight-badge {
 		display: inline-block;
-		background: #f2f2f2;
+		background: #f5f5f5;
 		padding: 0.125rem 0.5rem;
 		border-radius: 5px;
 		font-weight: 700;
@@ -54,20 +54,20 @@
 
 	.link-badge {
 		display: inline-block;
-		background: #f2f2f2;
+		background: #f5f5f5;
 		padding: 0 0.25rem;
 	}
 
 	.cta-link {
 		display: inline-block;
-		background: #f4f4f5;
+		background: #f5f5f5;
 		padding: 0.125rem 0.375rem;
 		border-radius: 4px;
 		transition: background-color 0.2s;
 	}
 
 	.cta-link:hover {
-		background: #e5e5e5;
+		background: #e8e8e8;
 	}
 </style>
 
