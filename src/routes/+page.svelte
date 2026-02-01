@@ -1,16 +1,31 @@
 <script lang="ts">
 	import "../app.css";
+	import { onMount } from 'svelte';
+
+	let headlineWords = $state<string[]>([]);
+	let bodyWords = $state<string[]>([]);
+	let ctaWords = $state<string[]>([]);
+
+	onMount(() => {
+		// Split headline into words, preserving the highlighted span
+		const headlineText = "Ron is a venture investor and 2x zero to unicorn growth leader.";
+		headlineWords = headlineText.split(' ');
+
+		// Split body text into words
+		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.";
+		bodyWords = bodyText.split(' ');
+
+		// Split CTA into words
+		const ctaText = "DM anytime on LinkedIn or at ron@zori.me.";
+		ctaWords = ctaText.split(' ');
+	});
 </script>
 
 <style>
-	@keyframes fadeInSlideUp {
+	@keyframes wordFadeIn {
 		0% {
 			opacity: 0;
-			transform: translateY(50px);
-		}
-		80% {
-			opacity: 1;
-			transform: translateY(0);
+			transform: translateY(10px);
 		}
 		100% {
 			opacity: 1;
@@ -18,21 +33,41 @@
 		}
 	}
 
-	.animate-fade-in-slide-up {
-		animation: fadeInSlideUp 1.5s ease-out forwards;
+	.word {
+		display: inline-block;
 		opacity: 0;
+		animation: wordFadeIn 0.8s ease-out forwards;
+		margin-right: 0.25em;
 	}
 
-	.animate-delay-100 {
-		animation-delay: 0.1s;
+	.word:last-child {
+		margin-right: 0;
 	}
 
-	.animate-delay-200 {
-		animation-delay: 0.2s;
+	.highlight-badge {
+		display: inline-block;
+		background: #f2f2f2;
+		padding: 0.125rem 0.5rem;
+		border-radius: 5px;
+		font-weight: 700;
 	}
 
-	.animate-delay-300 {
-		animation-delay: 0.3s;
+	.link-badge {
+		display: inline-block;
+		background: #f2f2f2;
+		padding: 0 0.25rem;
+	}
+
+	.cta-link {
+		display: inline-block;
+		background: #f4f4f5;
+		padding: 0.125rem 0.375rem;
+		border-radius: 4px;
+		transition: background-color 0.2s;
+	}
+
+	.cta-link:hover {
+		background: #e5e5e5;
 	}
 </style>
 
@@ -41,20 +76,146 @@
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000] animate-fade-in-slide-up" style="font-family: 'Inter', sans-serif; font-weight: 700;">
-			Ron is a venture investor and <span class="inline-block bg-[#f2f2f2] px-2 py-0.5 rounded-[5px] align-baseline" style="font-weight: 700;">2x zero to unicorn</span> growth leader.
+		<h1 class="text-[22px] leading-[1.2] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700;">
+			{#each headlineWords as word, i}
+				{#if word === '2x'}
+					<span class="word" style="animation-delay: {i * 0.25}s;">
+						<span class="highlight-badge">2x zero to unicorn</span>
+					</span>
+				{:else if word === 'zero' || word === 'to' || word === 'unicorn'}
+					<!-- Skip these as they're part of the badge -->
+				{:else}
+					<span class="word" style="animation-delay: {i * 0.25}s;">{word}</span>
+				{/if}
+			{/each}
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight animate-fade-in-slide-up animate-delay-200">
+		<div class="my-6 text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight">
 			<p>
-				He invested, advised or led growth for <a href="https://public.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Public.com</a>, <a href="https://erebor.so/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Erebor</a>, <a href="https://knotel.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Knotel</a>, <a href="https://openweb.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">OpenWeb</a>, <a href="https://blankstreet.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">BlankStreet</a>, <a href="https://govdash.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">GovDash</a>, <a href="https://voyantis.ai" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Voyantis</a>, <a href="https://syrup.tech" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Syrup.Tech</a>, <a href="https://synonym.bio" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Synonym</a>, <a href="https://terraone.io" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">TerraOne</a>, <a href="https://www.joinduet.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Duet</a>, <a href="https://cambrium.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Cambrium</a>, <a href="https://mangomicro.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Mango</a>, <a href="https://www.elvyenergy.com/en" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Elvy</a>, <a href="https://flagship.io" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Flagship</a>, <a href="https://www.aercompliance.com/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Aer</a>, <a href="https://usemine.com/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Mine</a>, <a href="https://wemoney.com.au" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">WeMoney</a>, <a href="https://www.getquin.com/portfolio-tracker/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">getquin</a>, <a href="https://cased.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Cased</a>, <a href="https://www.ledge.co/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Ledge</a>, <a href="https://www.rex.app/en" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Rex</a>, <a href="https://classet.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Classet</a>, <a href="https://www.colbr.co/" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Colbr</a>, <a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="bg-[#f2f2f2] px-1">Pazago</a>, played pro soccer in Israel and studied philosophy and economics at Columbia.
+				{#each bodyWords as word, i}
+					{#if word === 'Public.com,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://public.com" target="_blank" rel="noopener noreferrer" class="link-badge">Public.com</a>,
+						</span>
+					{:else if word === 'Erebor,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://erebor.so/" target="_blank" rel="noopener noreferrer" class="link-badge">Erebor</a>,
+						</span>
+					{:else if word === 'Knotel,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://knotel.com" target="_blank" rel="noopener noreferrer" class="link-badge">Knotel</a>,
+						</span>
+					{:else if word === 'OpenWeb,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://openweb.com" target="_blank" rel="noopener noreferrer" class="link-badge">OpenWeb</a>,
+						</span>
+					{:else if word === 'BlankStreet,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://blankstreet.com" target="_blank" rel="noopener noreferrer" class="link-badge">BlankStreet</a>,
+						</span>
+					{:else if word === 'GovDash,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://govdash.com" target="_blank" rel="noopener noreferrer" class="link-badge">GovDash</a>,
+						</span>
+					{:else if word === 'Voyantis,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://voyantis.ai" target="_blank" rel="noopener noreferrer" class="link-badge">Voyantis</a>,
+						</span>
+					{:else if word === 'Syrup.Tech,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://syrup.tech" target="_blank" rel="noopener noreferrer" class="link-badge">Syrup.Tech</a>,
+						</span>
+					{:else if word === 'Synonym,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://synonym.bio" target="_blank" rel="noopener noreferrer" class="link-badge">Synonym</a>,
+						</span>
+					{:else if word === 'TerraOne,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://terraone.io" target="_blank" rel="noopener noreferrer" class="link-badge">TerraOne</a>,
+						</span>
+					{:else if word === 'Duet,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.joinduet.com" target="_blank" rel="noopener noreferrer" class="link-badge">Duet</a>,
+						</span>
+					{:else if word === 'Cambrium,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://cambrium.com" target="_blank" rel="noopener noreferrer" class="link-badge">Cambrium</a>,
+						</span>
+					{:else if word === 'Mango,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://mangomicro.com" target="_blank" rel="noopener noreferrer" class="link-badge">Mango</a>,
+						</span>
+					{:else if word === 'Elvy,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.elvyenergy.com/en" target="_blank" rel="noopener noreferrer" class="link-badge">Elvy</a>,
+						</span>
+					{:else if word === 'Flagship,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://flagship.io" target="_blank" rel="noopener noreferrer" class="link-badge">Flagship</a>,
+						</span>
+					{:else if word === 'Aer,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.aercompliance.com/" target="_blank" rel="noopener noreferrer" class="link-badge">Aer</a>,
+						</span>
+					{:else if word === 'Mine,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://usemine.com/" target="_blank" rel="noopener noreferrer" class="link-badge">Mine</a>,
+						</span>
+					{:else if word === 'WeMoney,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://wemoney.com.au" target="_blank" rel="noopener noreferrer" class="link-badge">WeMoney</a>,
+						</span>
+					{:else if word === 'getquin,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.getquin.com/portfolio-tracker/" target="_blank" rel="noopener noreferrer" class="link-badge">getquin</a>,
+						</span>
+					{:else if word === 'Cased,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://cased.com" target="_blank" rel="noopener noreferrer" class="link-badge">Cased</a>,
+						</span>
+					{:else if word === 'Ledge,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.ledge.co/" target="_blank" rel="noopener noreferrer" class="link-badge">Ledge</a>,
+						</span>
+					{:else if word === 'Rex,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.rex.app/en" target="_blank" rel="noopener noreferrer" class="link-badge">Rex</a>,
+						</span>
+					{:else if word === 'Classet,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://classet.com" target="_blank" rel="noopener noreferrer" class="link-badge">Classet</a>,
+						</span>
+					{:else if word === 'Colbr,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://www.colbr.co/" target="_blank" rel="noopener noreferrer" class="link-badge">Colbr</a>,
+						</span>
+					{:else if word === 'Pazago,'}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">
+							<a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="link-badge">Pazago</a>,
+						</span>
+					{:else}
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.25}s;">{word}</span>
+					{/if}
+				{/each}
 			</p>
 		</div>
 
 		<!-- CTA -->
-		<p class="text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight animate-fade-in-slide-up animate-delay-300">
-			DM anytime on <a href="https://www.linkedin.com/in/ron-zori-9b718681/" target="_blank" rel="noopener noreferrer" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">LinkedIn</a> or at <a href="mailto:ron@zori.me" class="inline-block bg-[#f4f4f5] px-1.5 py-0.5 rounded-[4px] hover:bg-gray-200 transition-colors">ron@zori.me</a>.
+		<p class="text-lg sm:text-xl md:text-[1.25rem] leading-[1.6] text-[#0F0F0F] font-normal tracking-tight">
+			{#each ctaWords as word, i}
+				{#if word === 'LinkedIn'}
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">
+						<a href="https://www.linkedin.com/in/ron-zori-9b718681/" target="_blank" rel="noopener noreferrer" class="cta-link">LinkedIn</a>
+					</span>
+				{:else if word === 'ron@zori.me.'}
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">
+						<a href="mailto:ron@zori.me" class="cta-link">ron@zori.me</a>.
+					</span>
+				{:else}
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.25}s;">{word}</span>
+				{/if}
+			{/each}
 		</p>
 	</div>
 </div>

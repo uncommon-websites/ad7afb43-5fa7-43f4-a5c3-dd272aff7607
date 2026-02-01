@@ -496,3 +496,15 @@
 - [ ] Set transition window to 1.5s
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-01T19:39:26.513Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-01T19:38:18.708Z -->
+
+# Current Todo List State
+
+- [ ] Make opening word by word
+- [ ] Slow down word appearance
+
+──────────────────────────────────────────────────
