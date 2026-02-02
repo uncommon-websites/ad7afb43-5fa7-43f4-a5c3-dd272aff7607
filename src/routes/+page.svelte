@@ -12,7 +12,7 @@
 		headlineWords = headlineText.split(' ');
 
 		// Split body text into words
-		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.";
+		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago,  played pro soccer in Israel and studied philosophy and economics at Columbia.";
 		bodyWords = bodyText.split(' ');
 
 		// Split CTA into words
