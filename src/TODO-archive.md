@@ -638,3 +638,22 @@
 - [ ] Style headline font size 24
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-02T00:04:51.250Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-02T00:04:43.567Z -->
+
+# Current Todo List State
+
+- [ ] Set headline font-size to 20px
+- [ ] Set body font-size to 20px
+- [ ] Set body line-height to 28px
+- [ ] Match h1 line-height to body
+- [ ] Set h1 font-weight to 600
+- [ ] Set p font-weight to 400
+- [ ] Make pill inherit font-size
+- [ ] Make pill inherit line-height
+- [ ] Make pill inherit font-weight
+
+──────────────────────────────────────────────────
