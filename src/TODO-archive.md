@@ -717,17 +717,13 @@
 
 ──────────────────────────────────────────────────
 
-## Session: 2026-02-02T00:36:25.932Z
+## Session: 2026-02-02T00:38:33.333Z
 
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-02-02T00:35:55.186Z -->
+<!-- Updated: 2026-02-02T00:38:15.820Z -->
 
 # Current Todo List State
 
-- [ ] Remove hero styling from headline
-- [ ] Style headline as body text size
-- [ ] Set headline font-weight to 600
-- [ ] Set headline letter-spacing to 0
-- [ ] Set headline color to foreground
+- [ ] Make body text smaller
 
 ──────────────────────────────────────────────────

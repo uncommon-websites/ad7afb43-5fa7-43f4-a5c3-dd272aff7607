@@ -79,7 +79,7 @@
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 style="font-family: 'Inter', sans-serif; font-size: var(--text-lg); line-height: var(--text-lg--line-height); font-weight: 600; letter-spacing: 0; color: var(--foreground);">
+		<h1 class="tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
 					<span class="word" style="animation-delay: {i * 0.04}s;">
@@ -94,7 +94,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
@@ -205,7 +205,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
 					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
