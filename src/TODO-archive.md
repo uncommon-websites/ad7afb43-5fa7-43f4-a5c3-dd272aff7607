@@ -703,3 +703,16 @@
 - [ ] Add text rendering: optimizeLegibility
 
 ──────────────────────────────────────────────────
+
+## Session: 2026-02-02T00:31:12.026Z
+
+<!-- DO NOT EDIT - Managed by todo_list tool -->
+<!-- Updated: 2026-02-02T00:30:43.904Z -->
+
+# Current Todo List State
+
+- [ ] Style body font-kerning normal
+- [ ] Style body font-feature-settings normal
+- [ ] Style body font-variation-settings normal
+
+──────────────────────────────────────────────────
