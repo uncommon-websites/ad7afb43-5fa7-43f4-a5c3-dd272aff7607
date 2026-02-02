@@ -47,8 +47,8 @@
 	.highlight-badge {
 		display: inline-block;
 		background: #F3F4F6;
-		padding: 0.25rem 0.75rem;
-		border-radius: 999px;
+		padding: 2px 4px;
+		border-radius: 4px;
 		font-size: inherit;
 		line-height: inherit;
 		font-weight: inherit;
@@ -57,16 +57,16 @@
 	.link-badge {
 		display: inline-block;
 		background: #F3F4F6;
-		padding: 0.125rem 0.5rem;
-		border-radius: 999px;
+		padding: 2px 4px;
+		border-radius: 4px;
 		margin-right: -0.25em;
 	}
 
 	.cta-link {
 		display: inline-block;
 		background: #F3F4F6;
-		padding: 0.25rem 0.625rem;
-		border-radius: 999px;
+		padding: 2px 4px;
+		border-radius: 4px;
 		transition: background-color 0.2s;
 	}
 
@@ -95,7 +95,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
+		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: 1.3;">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
@@ -206,7 +206,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
+		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: 1.3;">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
 					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
