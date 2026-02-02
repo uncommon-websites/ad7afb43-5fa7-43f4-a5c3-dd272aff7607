@@ -4,6 +4,7 @@
 
 	let headlineWords = $state<string[]>([]);
 	let bodyWords = $state<string[]>([]);
+	let bioWords = $state<string[]>([]);
 	let ctaWords = $state<string[]>([]);
 
 	onMount(() => {
@@ -15,8 +16,12 @@
 		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago.";
 		bodyWords = bodyText.split(' ');
 
+		// Split bio text into words
+		const bioText = "Played pro soccer in Israel and studied philosophy and economics at Columbia.";
+		bioWords = bioText.split(' ');
+
 		// Split CTA into words
-		const ctaText = "Played pro soccer in Israel and studied philosophy and economics at Columbia. DM anytime on LinkedIn or at ron@zori.me.";
+		const ctaText = "DM anytime on LinkedIn or at ron@zori.me.";
 		ctaWords = ctaText.split(' ');
 	});
 </script>
@@ -194,9 +199,9 @@
 						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">
 							<a href="https://www.colbr.co/" target="_blank" rel="noopener noreferrer" class="link-badge">Colbr</a>,
 						</span>
-					{:else if word === 'Pazago,'}
+					{:else if word === 'Pazago.'}
 						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">
-							<a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="link-badge">Pazago</a>,
+							<a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="link-badge">Pazago</a>.
 						</span>
 					{:else}
 						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">{word}</span>
@@ -205,19 +210,28 @@
 			</p>
 		</div>
 
+		<!-- Bio Text -->
+		<div class="mb-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
+			<p>
+				{#each bioWords as word, i}
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">{word}</span>
+				{/each}
+			</p>
+		</div>
+
 		<!-- CTA -->
 		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + bioWords.length + i) * 0.04}s;">
 						<a href="https://www.linkedin.com/in/ron-zori-9b718681/" target="_blank" rel="noopener noreferrer" class="cta-link">LinkedIn</a>
 					</span>
 				{:else if word === 'ron@zori.me.'}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + bioWords.length + i) * 0.04}s;">
 						<a href="mailto:ron@zori.me" class="cta-link">ron@zori.me</a>.
 					</span>
 				{:else}
-					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">{word}</span>
+					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + bioWords.length + i) * 0.04}s;">{word}</span>
 				{/if}
 			{/each}
 		</p>
