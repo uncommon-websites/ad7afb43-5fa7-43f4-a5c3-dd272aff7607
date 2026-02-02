@@ -77,7 +77,7 @@
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 class="text-[32px] leading-[1.25] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 600;">
+		<h1 class="text-[24px] leading-[1.25] tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 600;">
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
 					<span class="word" style="animation-delay: {i * 0.04}s;">
