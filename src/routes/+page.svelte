@@ -95,7 +95,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
+		<div class="my-6 text-[#000000] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
@@ -206,7 +206,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
+		<p class="text-[#000000] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: var(--text-lg); line-height: var(--text-lg--line-height);">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
 					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
