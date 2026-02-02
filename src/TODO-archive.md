@@ -717,25 +717,17 @@
 
 ──────────────────────────────────────────────────
 
-## Session: 2026-02-02T00:34:53.239Z
+## Session: 2026-02-02T00:36:25.932Z
 
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-02-02T00:34:24.525Z -->
+<!-- Updated: 2026-02-02T00:35:55.186Z -->
 
 # Current Todo List State
 
 - [ ] Remove hero styling from headline
-- [ ] Style h1 font-size to var(--text-lg)
-- [ ] Style h1 line-height to var(--text-lg--line-height)
-- [ ] Style h1 font-weight to 600
-- [ ] Style h1 letter-spacing to 0
-- [ ] Style h1 color to var(--foreground)
-- [ ] Ensure h1 .pill inherits typography
-- [ ] Style .pill background to var(--muted)
-- [ ] Style .pill color to var(--muted-foreground)
-- [ ] Style .pill border-radius to 9999px
-- [ ] Style .pill padding to 2px 10px
-- [ ] Style .pill border to 0
-- [ ] Style .pill box-shadow to none
+- [ ] Style headline as body text size
+- [ ] Set headline font-weight to 600
+- [ ] Set headline letter-spacing to 0
+- [ ] Set headline color to foreground
 
 ──────────────────────────────────────────────────
