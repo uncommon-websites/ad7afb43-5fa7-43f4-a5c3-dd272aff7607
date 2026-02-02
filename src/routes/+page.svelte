@@ -94,7 +94,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
