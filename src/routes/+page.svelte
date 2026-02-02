@@ -12,7 +12,7 @@
 		headlineWords = headlineText.split(' ');
 
 		// Split body text into words
-		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.";
+		const bodyText = "He invested, advised or led growth for Public.com,Erebor,Knotel,OpenWeb,BlankStreet,GovDash,Voyantis,Syrup.Tech,Synonym,TerraOne. He also worked with Duet,Cambrium,Mango,Elvy,Flagship,Aer,Mine,WeMoney. Additionally, he supported getquin,Cased,Ledge,Rex,Classet,Colbr,Pazago. He played pro soccer in Israel and studied philosophy and economics at Columbia.";
 		bodyWords = bodyText.split(' ');
 
 		// Split CTA into words
@@ -59,6 +59,7 @@
 		background: #F3F4F6;
 		padding: 0.125rem 0.5rem;
 		border-radius: 999px;
+		margin-right: -0.25em;
 	}
 
 	.cta-link {
