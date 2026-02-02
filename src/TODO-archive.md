@@ -717,16 +717,25 @@
 
 ──────────────────────────────────────────────────
 
-## Session: 2026-02-02T00:32:06.236Z
+## Session: 2026-02-02T00:34:53.239Z
 
 <!-- DO NOT EDIT - Managed by todo_list tool -->
-<!-- Updated: 2026-02-02T00:31:34.981Z -->
+<!-- Updated: 2026-02-02T00:34:24.525Z -->
 
 # Current Todo List State
 
-- [ ] Update p font-size
-- [ ] Update p line-height
-- [ ] Update p font-weight
-- [ ] Update p letter-spacing
+- [ ] Remove hero styling from headline
+- [ ] Style h1 font-size to var(--text-lg)
+- [ ] Style h1 line-height to var(--text-lg--line-height)
+- [ ] Style h1 font-weight to 600
+- [ ] Style h1 letter-spacing to 0
+- [ ] Style h1 color to var(--foreground)
+- [ ] Ensure h1 .pill inherits typography
+- [ ] Style .pill background to var(--muted)
+- [ ] Style .pill color to var(--muted-foreground)
+- [ ] Style .pill border-radius to 9999px
+- [ ] Style .pill padding to 2px 10px
+- [ ] Style .pill border to 0
+- [ ] Style .pill box-shadow to none
 
 ──────────────────────────────────────────────────

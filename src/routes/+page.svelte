@@ -33,6 +33,21 @@
 		}
 	}
 
+	h1 {
+		font-size: var(--text-lg);
+		line-height: var(--text-lg--line-height);
+		font-weight: 600;
+		letter-spacing: 0;
+		color: var(--foreground);
+	}
+
+	h1 .pill {
+		font-size: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+		letter-spacing: inherit;
+	}
+
 	.word {
 		display: inline-block;
 		opacity: 0;
@@ -44,14 +59,14 @@
 		margin-right: 0;
 	}
 
-	.highlight-badge {
+	.pill {
 		display: inline-block;
-		background: #F3F4F6;
-		padding: 0.25rem 0.75rem;
-		border-radius: 999px;
-		font-size: inherit;
-		line-height: inherit;
-		font-weight: inherit;
+		background: var(--muted);
+		color: var(--muted-foreground);
+		border-radius: 9999px;
+		padding: 2px 10px;
+		border: 0;
+		box-shadow: none;
 	}
 
 	.link-badge {
@@ -79,11 +94,11 @@
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 class="tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<h1>
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
 					<span class="word" style="animation-delay: {i * 0.04}s;">
-						<span class="highlight-badge">2x zero to unicorn</span>
+						<span class="pill">2x zero to unicorn</span>
 					</span>
 				{:else if word === 'zero' || word === 'to' || word === 'unicorn'}
 					<!-- Skip these as they're part of the badge -->
