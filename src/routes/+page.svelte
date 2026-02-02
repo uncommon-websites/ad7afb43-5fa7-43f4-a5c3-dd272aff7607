@@ -59,6 +59,7 @@
 		background: #F3F4F6;
 		padding: 0.125rem 0.5rem;
 		border-radius: 999px;
+		margin-right: -0.25em;
 	}
 
 	.cta-link {
