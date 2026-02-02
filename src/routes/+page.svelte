@@ -77,7 +77,7 @@
 
 <div class="min-h-screen flex flex-col justify-center items-center p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#000000] bg-white selection:bg-gray-200">
 	<!-- Centered content -->
-	<div class="flex flex-col justify-center w-full text-left">
+	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
 		<h1 class="tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
