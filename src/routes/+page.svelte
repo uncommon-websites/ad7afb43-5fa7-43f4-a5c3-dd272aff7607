@@ -46,7 +46,7 @@
 
 	.highlight-badge {
 		display: inline-block;
-		background: #F3F4F6;
+		background: #1F2937;
 		padding: 0.25rem 0.75rem;
 		border-radius: 999px;
 		font-size: inherit;
@@ -56,30 +56,30 @@
 
 	.link-badge {
 		display: inline-block;
-		background: #F3F4F6;
+		background: #1F2937;
 		padding: 0.125rem 0.5rem;
 		border-radius: 999px;
 	}
 
 	.cta-link {
 		display: inline-block;
-		background: #F3F4F6;
+		background: #1F2937;
 		padding: 0.25rem 0.625rem;
 		border-radius: 999px;
 		transition: background-color 0.2s;
 	}
 
 	.cta-link:hover {
-		background: #e5e7eb;
+		background: #374151;
 	}
 </style>
 
-<div class="min-h-screen flex flex-col justify-center items-center p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-[#000000] bg-white selection:bg-gray-200">
+<div class="min-h-screen flex flex-col justify-center items-center p-6 sm:p-8 md:p-12 lg:p-16 font-sans text-white bg-black selection:bg-gray-800">
 	<!-- Centered content -->
 	<div class="flex flex-col justify-center max-w-[900px] mr-auto text-left">
 		
 		<!-- Headline -->
-		<h1 class="tracking-[-0.02em] text-[#000000]" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<h1 class="tracking-[-0.02em] text-white" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
 			{#each headlineWords as word, i}
 				{#if word === '2x'}
 					<span class="word" style="animation-delay: {i * 0.04}s;">
@@ -94,7 +94,7 @@
 		</h1>
 
 		<!-- Body Text -->
-		<div class="my-6 text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<div class="my-6 text-white tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
 			<p>
 				{#each bodyWords as word, i}
 					{#if word === 'Public.com,'}
@@ -205,7 +205,7 @@
 		</div>
 
 		<!-- CTA -->
-		<p class="text-[#6B7280] tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
+		<p class="text-white tracking-tight" style="font-family: 'Inter', sans-serif; font-weight: 400; font-size: var(--text-xl); line-height: var(--text-xl--line-height);">
 			{#each ctaWords as word, i}
 				{#if word === 'LinkedIn'}
 					<span class="word" style="animation-delay: {(headlineWords.length + bodyWords.length + i) * 0.04}s;">
