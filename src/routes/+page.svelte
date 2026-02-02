@@ -12,7 +12,7 @@
 		headlineWords = headlineText.split(' ');
 
 		// Split body text into words
-		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and studied philosophy and economics at Columbia.";
+		const bodyText = "He invested, advised or led growth for Public.com, Erebor, Knotel, OpenWeb, BlankStreet, GovDash, Voyantis, Syrup.Tech, Synonym, TerraOne, Duet, Cambrium, Mango, Elvy, Flagship, Aer, Mine, WeMoney, getquin, Cased, Ledge, Rex, Classet, Colbr, Pazago, played pro soccer in Israel and <br>studied philosophy and economics at Columbia.";
 		bodyWords = bodyText.split(' ');
 
 		// Split CTA into words
@@ -198,6 +198,9 @@
 						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">
 							<a href="https://pazago.com" target="_blank" rel="noopener noreferrer" class="link-badge">Pazago</a>,
 						</span>
+					{:else if word === '<br>studied'}
+						<br />
+						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">studied</span>
 					{:else}
 						<span class="word" style="animation-delay: {(headlineWords.length + i) * 0.04}s;">{word}</span>
 					{/if}
