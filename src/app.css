@@ -40,6 +40,11 @@
 
 	--font-body: var(--font-family), var(--font-fallback);
 	--font-display: var(--font-body);
+
+	/* Typography sizes - increased by 1 step */
+	--text-xl: 1.5rem;
+	--text-xl--line-height: 2rem;
+	--text-lg: 1.25rem;
 }
 
 body {
